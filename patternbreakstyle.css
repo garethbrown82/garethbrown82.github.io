@@ -1,0 +1,201 @@
+/*Hue: 196°oppositeAngle: 30°RGB: 00AE68 on http://colorschemedesigner.com/*/
+
+/*Colour Schemes*/
+
+body {
+	background: #95E3E3;
+}
+
+.levelwrapper,
+.wrapper,
+.title,
+.levelwrap {
+	border-color: #FF7400;
+}
+
+#buttonwrap,
+.button,
+#reset,
+#nextlevel {
+	border-color: black;
+}
+
+#buttonwrap {
+	background: lightgrey;
+}
+
+.activebutton {
+	background: #39E639;
+}
+
+.deactivebutton {
+	background: #FF4040;
+}
+
+.activebutton:hover {
+	background: #00CC00;
+}
+#reset:hover {
+	background: #BF7130;
+}
+
+#reset {
+	background: #FF9640;
+}
+
+/*End colour Scheme*/
+
+.levelwrapper,
+.wrapper,
+.title {
+	border-width: 2px;
+	border-style: solid;
+}
+
+h1, h2 {
+	margin: 0;
+	font-family: 'Coda Caption', sans-serif;
+}
+
+.levelwrap {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	margin: auto;
+	margin-top: 15px;
+	padding: 0px 100px 0px 20px;
+}
+
+#levelselect {
+	float: left;
+	margin-top: 10px;
+}
+
+.level {
+	float: left;
+	margin-left: 10px;
+}
+
+.targetwrap {
+	float: right;
+}
+
+.describe {
+font-family: Helvetica, sans-serif;
+font-size: 14pt;
+}
+
+
+.title {
+	box-sizing: border-box;
+	width: 80%;
+	height: 120px;
+	background: white;
+	text-align: center;
+	font-size: 24pt;
+	margin: auto;
+	border-radius: 10px;
+}
+
+.wrapper {
+	width: 1000px;
+	height: 900px;
+	margin: auto;
+	padding: 15px;
+	background: white;
+}
+
+#buttonwrap {
+	box-sizing: border-box;
+	height: 400px;
+	width: 300px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 100px;
+	text-align: center;
+	padding-top: 10px;
+	-webkit-user-select: none;
+}
+
+.button {
+	box-sizing: border-box;
+	height: 110px;
+	width: 110px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	margin: 15px;
+	padding-top: 15px;
+	display: inline-block;
+	font-size: 36pt;
+	transition-duration: 150ms;
+	font-family: 'Coda Caption', sans-serif;
+	cursor: context-menu;
+}
+
+.button:active,
+#reset:active {
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8) inset;
+}
+
+#reset {
+	box-sizing: border-box;
+	border-width: 2px;
+	border-style: solid;
+	height: 70px;
+	width: 256px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 10px;
+	font-size: 38pt;	
+	transition-duration: 180ms;
+	font-family: Helvetica, sans-serif;
+	cursor: context-menu;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#nextlevel {
+	display: none;
+	box-sizing: border-box;
+	height: 90px;
+	width: 300px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 20px;
+	padding-top: 5px;
+	font-size: 24pt;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	-webkit-user-select: none;
+	-webkit-animation: flashgreen .6s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	cursor: context-menu;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/*----------Key Frames----------*/
+
+@-webkit-keyframes flashgreen {
+	from {background: rgba(0, 204, 0, 0.5);}
+	to   {background: rgba(0, 204, 0, 1.0);}
+}
