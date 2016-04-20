@@ -1,0 +1,181 @@
+/*CSS style sheet*/
+
+html {
+	background-color: black;
+}
+
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.header {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 15px 0;
+	/*height: 100px;*/
+}
+
+.logo {
+	float: left;
+}
+
+[src="img/mario-logo.gif"] {
+	width: 100%;
+	max-width: 150px;
+}
+
+nav {
+	float: right;
+	height: 60px;
+	margin: 5px 0 0 0;
+}
+
+nav a {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	width: 50px;
+	text-align: center;
+	margin: 10px 10px;
+	transition-property: background, color;
+	transition-duration: 2s;
+
+}
+
+nav a:nth-child(1):hover {
+	/*background: radial-gradient(closest-side, #555, black);*/
+	background-color: red;
+	transition-duration: .5s;
+}
+nav a:nth-child(2):hover {
+	/*background: radial-gradient(closest-side, #555, black);*/
+	background-color: blue;
+	transition-duration: .5s;
+}
+nav a:nth-child(3):hover {
+	/*background: radial-gradient(closest-side, #555, black);*/
+	background-color: yellow;
+	color: black;
+	transition-duration: .5s;
+}
+nav a:nth-child(4):hover {
+	/*background: radial-gradient(closest-side, #555, black);*/
+	background-color: green;
+	transition-duration: .5s;
+}
+
+.main {
+	box-sizing: border-box;
+	width: 68%;
+	float: left;
+	margin: 15px 2% 0 0;
+}
+
+.side-bar {
+	box-sizing: border-box;
+	width: 28%;
+	float: left;
+	margin: 15px 0 0 2%;
+}
+
+.mario-jump-img {
+	display: block;
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+	-webkit-animation-name: jump;
+	-webkit-animation-duration: .6s;
+	-webkit-animation-timing-function: cubic-bezier(.40, .91, .7, 1.4);
+}
+
+.main, .side-bar {
+	height: 400px;
+}
+
+.header, 
+.main, 
+.side-bar {
+	border-width: 5px;
+	border-style: solid;
+	border-color: white;
+	color: white;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.footer {
+float: left;
+margin-top: 20px;
+color: white;
+background-color: grey;
+}
+
+/*Clear Fix*/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/*-------------Key Frames-----------*/
+
+@-webkit-keyframes jump {
+	0% { -webkit-transform: translateY(250px); }
+	100% { -webkit-transform: translateY(0px); }
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 668px) {
+	.main,
+	.side-bar {
+		float: none;
+		width: 100%;
+		margin: 0 0 20px 0
+	}
+
+	.header {
+		text-align: center;
+	}
+
+	nav,
+	.logo {
+		float: none;
+	}
+
+	nav a {
+		margin: 0 1vw;
+	}
+
+
+	[src="img/mario-logo.gif"] {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.header,
+	.main,
+	.side-bar {
+		min-width: 220px;
+	}
+}
+
+/*@media screen and (max-width: 320px) {
+	.main,
+	.side-bar,
+	.header {
+		width: 320px;
+		background: red;
+	}
+
+}
+*/
